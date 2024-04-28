@@ -8,22 +8,27 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+  --primary-color: #008321
+}
+
 ul{
   list-style: none;
 }
 
 a{
   text-decoration: none;
+  color: #000;
 }
 
 .mainWrapper{
   display: flex;
-  height: calc(100vh - 70px);
+  height: auto
 }
 
 aside{
   border-right: 1px solid #ddd;
-  height: 100%;
+  min-height: 100%;
   /* background: #ddd; */
   padding: 15px;
 }
@@ -36,7 +41,7 @@ aside{
 }
 
 .menu a{
-  background: #550083;
+  background: var(--primary-color);
   border-radius: 20px;
   color: #fff;
   font-size: 20px;
@@ -51,7 +56,18 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 45px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bannerWrapper > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  gap: 20px;
 }
 
 .mainTop{
@@ -62,9 +78,10 @@ main{
   margin-bottom: 40px;
 }
 
+
 .mainTop button, footer > a{
   padding: 15px 35px;
-  background: #550083;
+  background: var(--primary-color);
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
@@ -73,15 +90,35 @@ main{
 }
 
 .placeOfTheMonth h2{
-  font-size: 35px;
-}
-
-.mainTop h1{
   font-size: 45px;
 }
 
+.mainTop h1{
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+
+.homePara{
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.homePara p{
+  font-size: 18px;
+}
+
+.homePara h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 .mainBanner{
-  width: 50%;
+  width: 70%;
+}
+
+.mainBanner img{
+  width: 100%;
 }
 
 .mainImages{
@@ -91,18 +128,67 @@ main{
 
 }
 
+.restaurantWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.stamp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.stamp > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stamp button{
+  padding: 15px 40px;
+  border: none;
+  background: #ffbb00;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: -60px;
+}
+
 .mainImages img{
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 20px;
 }
 
-.mainBanner img{
+.restaurant{
   width: 100%;
 }
 
-.mainImages h2{
-  font-size: 35px;
+.restaurant img{
+  width: 100%;
+}
+
+.restaurant > h2{
+  font-size: 30px;
+  text-align: center;
+}
+.stamp h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.mainImages > h2{
+  font-size: 45px;
   text-align: center;
 }
 
