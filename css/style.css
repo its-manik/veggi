@@ -9,7 +9,7 @@ body{
 }
 
 :root{
-  --primary-color: #008321
+  --primary-color: #00a003
 }
 
 ul{
@@ -48,6 +48,11 @@ aside{
   width: 100%;
   text-align: center;
   padding: 15px 30px;
+  transition: all .1s ease;
+}
+
+.menu a:hover{
+  background: #008602;
 }
 
 main{
@@ -87,6 +92,11 @@ main{
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  transition: all .1s ease;
+}
+
+.mainTop button:hover, footer > a:hover{
+  background: #008602;
 }
 
 .placeOfTheMonth h2{
@@ -154,7 +164,7 @@ main{
   width: 100%;
 }
 
-.stamp button{
+.stamp > button{
   padding: 15px 40px;
   border: none;
   background: #ffbb00;
@@ -162,6 +172,19 @@ main{
   text-transform: uppercase;
   color: #fff;
   margin-top: -60px;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.stamp > button:hover{
+  background: #ffaa00;
+}
+
+.stamp > button.active{
+  background: #ff0000;
+}
+
+.stamp > button.active:hover{
+  background: #e30000;
 }
 
 .mainImages img{
